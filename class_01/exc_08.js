@@ -5,11 +5,9 @@ const waitTo = (ms) => {
 
         const identifier = setInterval(() => {
             arr.push(count++)
-            if (arr.length === 2) {
-                clearInterval(identifier)
-                return arr
-            }
-        }, ms)
+            if (arr.length === 2) clearInterval(identifier)
+            console.log(arr)
+        }, ms / 2)
     })
 }
 

@@ -9,6 +9,7 @@ function checkData() {
             if (JSON.parse(value)) {
                 let jsonValue = JSON.parse(value)
                 if (jsonValue.age) allAges += Number(jsonValue.age)
+                console.log(`This is a valid string JSON: ${value}`)
             }
         } catch (error) {
             console.log(`There is an undefined parameter array. index: ${index}`)
